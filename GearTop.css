@@ -364,3 +364,106 @@ footer p{
     font-size: 16px;
     padding-left: 100px;
 }
+
+.car-stats{
+    padding: 5em 1em;
+}
+
+.stats{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stats > div {
+    margin-bottom: 1em;
+    position: relative;
+    min-width: 10em;
+}
+
+.stats > div h1:nth-child(2){
+    color: #282828;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.stats h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.counter{
+    margin: 0.1em 0;
+}
+
+.car{
+    padding-left: 440px;
+}
+
+.circle{
+    padding-right: 150px;
+    border: 2px #ccc solid;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: #161616;
+    animation: glow 4s ease-in-out infinite;
+               aspect-ratio: 3 / 1;
+}
+
+.car img{
+    width: 70%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.circle div{
+    border: inherit;
+    border-radius: inherit;
+    background: inherit;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    animation: inherit;
+}
+
+.circle .inner-md-circle{
+    width: 75%;
+    height: 75%;
+    top: 10%;
+    animation-delay: 3s;
+}
+
+.circle .inner-sm-circle{
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    animation-delay: 6s;
+}
+
+@keyframes glow{
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 1em #5bc7ca;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+
+
+
