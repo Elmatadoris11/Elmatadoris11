@@ -97,8 +97,14 @@ nav a:hover{
     align-items: flex-end;
 }
 
+.header-body h1{
+    font-weight: bold;
+}
+
 .header-body p{
     max-width: 25em;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .heading h2{
@@ -274,6 +280,7 @@ footer p{
     width: 100%;
     display: flex;
     align-items: flex-end;
+    font-weight: bold;
 }
 
 .title h1{
@@ -298,3 +305,62 @@ footer p{
     max-height: auto;
 }
 
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper img{
+    max-width: 320px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.text-box h2{
+    font-size: 42px;
+}
+
+.text-box p{
+    font-size: 16px;
+}
+
+.pictures{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    max-width: 1570px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pictures img{
+    width: 580px;
+    height: 550px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 5px;
+}
+
+.pictures img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.description{
+    padding-top: 120px;
+}
+
+.description h2{
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.description p{
+    font-size: 16px;
+    padding-left: 100px;
+}
